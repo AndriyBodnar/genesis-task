@@ -22,7 +22,9 @@ export default function VideoContainer({ lessons, currentVideo }) {
 
   const handleExitPictureInPicture = () => {
     try {
-      document.exitPictureInPicture();
+      if (document.exitPictureInPicture) {
+        document.exitPictureInPicture();
+      }
     } catch (error) {
       console.error(error);
     }

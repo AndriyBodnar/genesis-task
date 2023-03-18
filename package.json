@@ -1,12 +1,12 @@
 {
-  "homepage": "http://andriybodnar.github.io/genesis-task",
+  "homepage": "http://andriybodnar.github.io/genesis-task/",
   "name": "genesis-task",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
