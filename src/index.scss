@@ -1,0 +1,145 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-family: "Baloo Bhai 2", cursive;
+
+  background-color: #d4bdbd;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0 auto;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  min-width: 1200px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+/* button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-weight: 400;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+} */
+
+.App {
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  width: 1200px;
+}
+
+.courses__list {
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+}
+
+.lesson__item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#container {
+  font-family: Trocchi;
+  font-size: 50px;
+  color: steelblue;
+  text-align: center;
+  margin: 100px;
+  display: align-self;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+#top {
+}
+
+#middle {
+  margin-top: -90px;
+  font-size: 250px;
+  font-weight: bold;
+}
+
+#bottom {
+  font-size: 30px;
+}
+
+.active__lesson {
+  text-decoration: underline;
+}
+
+.locked__lesson {
+  color: rgb(163, 143, 143);
+}
+
+body::-webkit-scrollbar {
+  width: 15px;
+}
+body::-webkit-scrollbar-track {
+  background-color: #d4bdbd;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #646cff;
+  border-radius: 15px;
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 380px) {
+  .courses__list {
+    flex-direction: column;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  .courses__list {
+    flex-direction: row;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+}
