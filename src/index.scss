@@ -38,20 +38,6 @@ h1 {
   line-height: 1.1;
 }
 
-/* button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-weight: 400;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-} */
-
 .App {
   display: flex;
   justify-content: center;
@@ -124,16 +110,10 @@ body::-webkit-scrollbar-thumb {
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 380px) {
-  .courses__list {
-    flex-direction: column;
-  }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
-  .courses__list {
-    flex-direction: row;
-  }
 }
 
 /* Medium Devices, Desktops */

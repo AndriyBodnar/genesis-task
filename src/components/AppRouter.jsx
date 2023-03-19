@@ -1,5 +1,5 @@
-import React, { useContext } from "react";
-import { Navigate, Route, Routes, useRoutes } from "react-router-dom";
+import React from "react";
+import { Navigate, Route, Routes} from "react-router-dom";
 import Courses from "../pages/Courses";
 import CourseIdPage from "../pages/CourseIdPage";
 import NotFound from "../pages/NotFound";

@@ -21,7 +21,7 @@ export default function CoursesItem({ props }) {
         }
       }}
       onMouseLeave={() => setShowVideo(false)}
-      // titlecourse={props.title}
+     
     >
       <CardActionArea>
         {!showVideo ? (

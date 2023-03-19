@@ -1,12 +1,13 @@
-import React, { useCallback, useEffect, useRef, useState } from "react";
+import React, { useCallback, useEffect,  useState } from "react";
 import ReactHlsPlayer from "react-hls-player/dist";
 import FailVideo from "./FailVideo";
 import { useEventListener } from "../hooks/useEventListener";
 import { Alert } from "@mui/material";
-import { useLocation } from "react-router-dom";
+
+import Button from "./UI/Button/Button";
 
 export default function VideoContainer({ lessons, currentVideo }) {
-  const loc = useLocation();
+
 
   const [videoProgress, setVideoProgress] = useState(0);
 
@@ -22,11 +23,9 @@ export default function VideoContainer({ lessons, currentVideo }) {
 
   const handleExitPictureInPicture = () => {
     try {
-      if (document.exitPictureInPicture) {
-        document.exitPictureInPicture();
-      }
+      document.exitPictureInPicture();
     } catch (error) {
-      console.error(error);
+      return null;
     }
   };
 
@@ -86,8 +85,8 @@ export default function VideoContainer({ lessons, currentVideo }) {
         onTimeUpdate={handleTimeUpdate}
         onLoadedMetadata={startVideoFromLocal}
       />
-      <button onClick={handlePictureInPicture}>Picture-in-Picture</button>
 
+      <Button onClick={handlePictureInPicture}>Picture-in-Picture</Button>
       <Alert
         variant="filled"
         severity="success"

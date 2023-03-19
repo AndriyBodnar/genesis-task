@@ -2,12 +2,11 @@ import React, { useEffect, useState } from "react";
 import { useFetching } from "../hooks/useFetching";
 import CoursesService from "../API/CoursesService";
 import { useNavigate, useParams } from "react-router-dom";
-import { Box, CircularProgress, List, Rating, Typography } from "@mui/material";
+import {  CircularProgress,  Rating,  } from "@mui/material";
 import LessonItem from "../components/LessonItem/LessonItem";
 import VideoContainer from "../components/VideoContainer";
 import { OrderContext } from "../context";
 import FailVideo from "../components/FailVideo";
-import s from "../components/LessonItem/LessonItem.module.scss";
 import Button from "../components/UI/Button/Button";
 
 export default function CourseIdPage() {

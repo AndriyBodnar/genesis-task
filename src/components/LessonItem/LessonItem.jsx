@@ -1,11 +1,7 @@
 import * as React from "react";
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 
-import Typography from "@mui/material/Typography";
-import { Alert, Chip, List, ListItem, ListItemText } from "@mui/material";
+
+import {  Chip, } from "@mui/material";
 import { OrderContext } from "../../context";
 import s from "../LessonItem/LessonItem.module.scss";
 import Button from "../UI/Button/Button";
@@ -43,15 +39,7 @@ export default function LessonItem({ lesson }) {
       <div className={s.course__time}>
         <Chip label={status} color={accessInfo} variant="outlined" />
       </div>
-      {/* <div className={s.course__button}>
-        <button
-          type="button"
-          disabled={status === "locked"}
-          onClick={() => setOrder(orderValue - 1)}
-        >
-          View lesson
-        </button>
-      </div> */}
+    
 
       <Button
         disabled={status === "locked" || order == orderValue - 1}
@@ -61,32 +49,10 @@ export default function LessonItem({ lesson }) {
       </Button>
     </div>
 
-    // <ListItem button>
-    //   <ListItemText primary={`${order}. ${title}`} secondary={{ status }} />
-    // </ListItem>
+
   );
 }
 
 {
-  /* <div
-style={{
-  display: "flex",
-  justifyContent: "space-between",
-  border: "1px solid rgba(32, 12, 12, 0.87)",
-  borderRadius: "12px",
-  padding: "10px",
-  marginTop: "10px",
-  cursor: "pointer",
-}}
-onClick={() => setOrder(orderValue - 1)}
->
-<Typography
-  variant="h6"
-  gutterBottom
-  className={`${currentStyle + " " + lockedStyle}`}
->
-  {orderValue}. {title}{" "}
-</Typography>
-<Chip label={status} color={accessInfo} variant="outlined" />
-</div> */
+
 }
